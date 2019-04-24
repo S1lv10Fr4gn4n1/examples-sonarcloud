@@ -63,6 +63,11 @@ class LoginActivity : AppCompatActivity(), LoaderCallbacks<Cursor> {
         loaderManager.initLoader(0, null, this)
     }
 
+    private fun test_abacate_123() {
+        val s: String? = null
+        s!!.toString()
+    }
+
     private fun mayRequestContacts(): Boolean {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
             return true
