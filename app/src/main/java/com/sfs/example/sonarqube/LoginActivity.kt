@@ -49,6 +49,10 @@ class LoginActivity : AppCompatActivity(), LoaderCallbacks<Cursor> {
         })
 
         email_sign_in_button.setOnClickListener { attemptLogin() }
+
+        MySingleton.abacate_azul()
+
+        mAuthTask!!.get()
     }
 
     private fun populateAutoComplete() {
