@@ -64,8 +64,6 @@ class LoginActivity : AppCompatActivity(), LoaderCallbacks<Cursor> {
         }
 
         loaderManager.initLoader(0, null, this)
-
-//        val a = ""
     }
 
     private fun test_12() {
