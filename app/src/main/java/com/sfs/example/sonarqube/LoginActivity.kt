@@ -23,6 +23,7 @@ import android.widget.TextView
 
 import java.util.ArrayList
 import android.Manifest.permission.READ_CONTACTS
+import android.util.Log
 
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -57,6 +58,12 @@ class LoginActivity : AppCompatActivity(), LoaderCallbacks<Cursor> {
         }
 
         loaderManager.initLoader(0, null, this)
+
+        val a = ""
+    }
+
+    private fun test_12() {
+        // do nothing
     }
 
     private fun mayRequestContacts(): Boolean {
@@ -74,6 +81,10 @@ class LoginActivity : AppCompatActivity(), LoaderCallbacks<Cursor> {
             requestPermissions(arrayOf(READ_CONTACTS), REQUEST_READ_CONTACTS)
         }
         return false
+    }
+
+    fun testUnusedMethod(event: String) {
+        Log.e("test", "testUnusedMethod")
     }
 
     /**
