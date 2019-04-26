@@ -50,6 +50,12 @@ class LoginActivity : AppCompatActivity(), LoaderCallbacks<Cursor> {
         })
 
         email_sign_in_button.setOnClickListener { attemptLogin() }
+
+        if (true) {
+            test_12()
+        } else {
+            populateAutoComplete()
+        }
     }
 
     private fun populateAutoComplete() {
@@ -59,7 +65,7 @@ class LoginActivity : AppCompatActivity(), LoaderCallbacks<Cursor> {
 
         loaderManager.initLoader(0, null, this)
 
-        val a = ""
+//        val a = ""
     }
 
     private fun test_12() {
